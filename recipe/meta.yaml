@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aicspylibczi-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/aicspylibczi-{{ version }}.tar.gz
   sha256: e3d18daf92c4de6e91d37a33a43b83611d3268cadf8a610c2f3eae7f54408ba3
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
