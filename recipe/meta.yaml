@@ -29,6 +29,7 @@ requirements:
   run:
     - python
     - numpy >=1.14.1
+    - openssl  # [linux]
 
 test:
   imports:
