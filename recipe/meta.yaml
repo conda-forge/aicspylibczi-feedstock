@@ -1,16 +1,16 @@
 {% set name = "aicspylibczi" %}
-{% set version = "3.3.1" %}
+{% set version = "4.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aicspylibczi-{{ version }}.tar.gz
-  sha256: e3d18daf92c4de6e91d37a33a43b83611d3268cadf8a610c2f3eae7f54408ba3
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/aicspylibczi-{{ version }}.tar.gz
+  sha256: 4a10a86d71ac7148c02e91163aa1f0225eb80ea0cc71d71ac8e50969e057e559
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -29,6 +29,7 @@ requirements:
   run:
     - python
     - numpy >=1.14.1
+    - openssl  # [linux]
 
 test:
   imports:
